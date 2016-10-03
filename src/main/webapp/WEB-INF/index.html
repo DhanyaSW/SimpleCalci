@@ -1,0 +1,19 @@
+<<html>
+<title>simple calci</title>
+<body>
+<input type="number" id="num1" required autofocus>
+<input type="number" id="num2" required>
+<input type="button" value="Add" onclick="addfunc();">
+<p id="result">
+</p>
+<script>
+function addfunc(){
+var n1=document.getElementById("num1").value;
+var n2=document.getElementById("num2").value;
+var result=+n1 + +n2;
+alert("sum is "+result);
+document.getElementById("result").innerHTML=result;
+}
+</script>
+</body>
+</html>
